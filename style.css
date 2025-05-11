@@ -538,7 +538,7 @@ main .recent_order a{
 
 /* .......Medida Query for phones......... */
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .container{
         width: 100%;
         grid-template-columns: repeat(1,1fr);
@@ -630,5 +630,6 @@ main .Insights{
     color: var(--clr--dark);
     position: absolute;
     left: 1rem;
-  }
-}
+  } */
+
+ 
