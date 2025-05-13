@@ -60,7 +60,7 @@ body{
     height: 100vh;
     font-size: 0.88rem;
     user-select: none;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: var(--clr--color-backround);
 }
 
@@ -558,11 +558,11 @@ main .recent_order a{
     main .recent_order table{
         width: 83vw;
     }
-    main table tbody tr td:last-child, 
+    /* main table tbody tr td:last-child, 
     main table tbody tr td:first-child{
         display: none;
     }
-}
+} */
 
 
 /* .......Medida Query for phones......... */
@@ -575,7 +575,7 @@ main .recent_order a{
 
     aside {
         position: fixed;
-        left: -100px;
+        left: -50px;
         width: 18rem;
         z-index: 3;
         background: var(--clr-white);
@@ -587,9 +587,9 @@ main .recent_order a{
     }
 
     @keyframes showMenu{
-        to(
+        to (
             left: 0;
-        )
+        );
     }
 
     aside .logo h2{
