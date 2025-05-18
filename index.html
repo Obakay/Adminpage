@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp " />
    <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
@@ -72,7 +73,13 @@
 
         <!-- main section start --> 
         <main>
+           <div class="menu" id="menu">
+            <button id="menu_bar">
+                <span class="material-symbols-sharp" >menu</span>
+
+            </button>
             <h2> Dashboard </h2>
+           </div>
             <div class="date">
                 <input type="date" >
             </div>
@@ -204,10 +211,7 @@
         <!-- right section start -->
         <div class="right">
             <div class="top">
-                <button id="menu_bar">
-                    <span class="material-symbols-sharp">menu</span>
-
-                </button>
+                
                 <div class="theme-toggler">
                     <span class="material-symbols-sharp active">light_mode</span>
                     <span class="material-symbols-sharp">dark_mode</span> 

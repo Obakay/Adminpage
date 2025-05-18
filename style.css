@@ -131,9 +131,8 @@ aside{
 aside.top{
     background-color:var(--clr-white);
     display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    margin-top: 1.4rem; 
+    width: 100%;
+    margin: 1rem; 
 }
 aside.logo{
     display: flex;
@@ -218,6 +217,19 @@ main{
     margin-top: 1.4rem;
     width: auto;
 
+}
+main .menu{
+    display: flex;
+    width: 100%;
+    margin: 1rem;
+}
+#menu_bar{
+    color: #2b2b2b;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
 }
 main input{
     background-color: transparent;
@@ -397,9 +409,11 @@ main .recent_order a{
     justify-content: start;
     gap: 2rem;
 }
+ 
+
 
 .right  .top button{
-    display: none;
+    display: flex;
 }
 
 .right .theme-toggler {
@@ -526,8 +540,133 @@ main .recent_order a{
     margin-bottom: 40px;
  }
 
+ @media (max-width: 769px) {
+  menu{
+        width: 200px;
+        position: fixed;
+        left: -200px;
+        transition: 0.3s ease;
+         
+    }
+    #menu.active{
+        left: -200;
+        
+    }
+
+    #menu_bar{
+        display: initial;
+    }
+    
+    .right .top {
+        display: flex;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 300px);
+        position: absolute;
+        /* gap: 4rem; */
+        margin-left:3rem;
+        padding:15px  30px;
+    }
+    .right {
+        margin-top: 1.4rem;
+        display: inline-block;
+        position: relative;
+         
+    }
+    .right h2 {
+       margin-left: 10rem;
+       display: inline-block;
+       justify-content: right;
+      align-items: flex-end;
+    }
+    .right .recent_update .updates {
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        margin-left: 10rem;
+        padding-left: 10px;
+    }
+    .right .sales_analytics {
+        margin-top: 2rem;
+        width:500px;
+        margin-left: 10rem;
+        
+    }
+    .right .sales_analytics .item {
+        
+        display: flex;
+        justify-content:start;
+        align-items: center;
+        gap: 2rem;
+         
+    }
+    .add_products div {
+        display: inline-block;
+        height: 60px;
+        width: 30%;
+        margin-left: 20rem;
+    }
+     
+    main .Insights {
+        display: inline-block;
+        padding: 30px;
+        transition: 0.3s ease;
+        
+    }
+    main .Insights>div {
+        width: 300px
+        transition: 0.3s ease;
+         
+    }
+    main h1 {
+        margin-top: 5rem;
+        margin-bottom:2rem;
+        transition: 0.3s ease;
+    }
+    main .recent_order{
+        
+        width: 800px;
+        padding: 15px;
+        overflow-x: auto;
+        transition: 0.3s ease;
+    }
+    main .recent_order table {
+        width: 100%;
+        border-collapse: collapse;
+        transition: 0.3s ease;
+    }
+    aside  {
+        display: none;
+    }
+}
+
 /* ........Media Query ....... */
-@media screen and (max-width:1200px) {
+@media (max-width:477px){
+    .right .top {
+        width: 90%;
+        gap: 2rem;
+        padding: 15px;
+         
+    }
+}
+.profile-photo img {
+   margin-left: 2rem;
+}
+main .Insights {
+     padding: 15px 15px 0 15px; 
+}
+main .Insights>div {
+    width:100%;
+    margin: 8px 0;
+}
+main .recent_order {
+    margin: 30px 15px 30px 15px;
+}
+  
+
+/* ........Media Query ....... */
+/* @media screen and (max-width:1200px) {
     .container{
         width: 94%;
         grid-template-columns: 7rem auto 14rem;
@@ -553,11 +692,11 @@ main .recent_order a{
         position: absolute;
         left: 50;
         transform: translateX(-50%);
-        margin: 2rem 0 0 8.8rem;
+        margin: 2rem 0 0 2.8rem;
     }
     main .recent_order table{
         width: 83vw;
-    }
+    } */
     /* main table tbody tr td:last-child, 
     main table tbody tr td:first-child{
         display: none;
@@ -566,7 +705,7 @@ main .recent_order a{
 
 
 /* .......Medida Query for phones......... */
-
+/* 
 @media screen and (max-width:768px) {
     .container{
         width: 100%;
@@ -649,7 +788,7 @@ main .recent_order a{
         top: 0;
         left: 0;
         /* display: flex; */
-        justify-content: center;
+        /* justify-content: center;
         align-items: center;
         padding: 0 0.8rem;
         background: var(--clr-white);
@@ -659,9 +798,9 @@ main .recent_order a{
         box-shadow: 0 1rem 1rem var(--box-shadow);
         margin: 0;
 
-    }
+    } */ */
 
-    .right .top .theme-toggler{
+    /* .right .top .theme-toggler{
         width: 4.4rem;
         position: absolute;
         left: 66%;
@@ -693,7 +832,7 @@ main .Insights{
     
 }
  main .recent_order{
-    padding: 30px;
+    padding:30px;
     margin: 0 auto;
  }
  .right .profile{
@@ -713,8 +852,9 @@ main .Insights{
    .add_products{
     padding: 30px;
   }
+  
+} */
 
 
-
-   
+ 
 }

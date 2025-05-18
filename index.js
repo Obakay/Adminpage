@@ -23,4 +23,7 @@ themeToggler.addEventListener('click', ()=>
     secondSpan.classList.toggle('active');
 });
 
+// $('#menu_bar').click(function(){
+//     $('#menu').toggleClass("active");
+// })
  
