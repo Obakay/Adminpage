@@ -541,15 +541,15 @@ main .recent_order a{
  }
 
  @media (max-width: 769px) {
-  menu{
+  /* menu{
         width: 200px;
         position: fixed;
-        left: -200px;
+        left:0;
         transition: 0.3s ease;
          
-    }
-    #menu.active{
-        left: -200;
+    } */
+    aside.active{
+        left:-200;
         
     }
 
@@ -562,7 +562,7 @@ main .recent_order a{
         top: 0;
         justify-content: center;
         align-items: center;
-        width: calc(100% - 300px);
+        /* width: calc(100% - 300px); */
         position: absolute;
         /* gap: 4rem; */
         margin-left:3rem;
@@ -572,25 +572,31 @@ main .recent_order a{
         margin-top: 1.4rem;
         display: inline-block;
         position: relative;
+        margin-bottom: 5rem;
          
     }
     .right h2 {
+        margin-top: 3rem;
        margin-left: 10rem;
        display: inline-block;
        justify-content: right;
-      align-items: flex-end;
+      align-items:center;
+    }
+    .right .recent_update{
+        margin-top: 3rem;
     }
     .right .recent_update .updates {
+        /* margin-top: 5rem; */
         justify-content: center;
         align-items: center;
         width: 500px;
-        margin-left: 10rem;
+        margin-left: 3rem;
         padding-left: 10px;
     }
     .right .sales_analytics {
         margin-top: 2rem;
         width:500px;
-        margin-left: 10rem;
+        margin-left: 3rem;
         
     }
     .right .sales_analytics .item {
@@ -604,18 +610,22 @@ main .recent_order a{
     .add_products div {
         display: inline-block;
         height: 60px;
-        width: 30%;
-        margin-left: 20rem;
+        width: 50%;
+        margin-left: 5rem;
     }
      
     main .Insights {
         display: inline-block;
+        flex-wrap: wrap;
         padding: 30px;
         transition: 0.3s ease;
         
     }
+    main .Insights:last-child{
+        display:  block;
+    }
     main .Insights>div {
-        width: 300px
+        /* width: 300px */
         transition: 0.3s ease;
          
     }
@@ -629,17 +639,24 @@ main .recent_order a{
         width: 800px;
         padding: 15px;
         overflow-x: auto;
-        transition: 0.3s ease;
+        /* transition: 0.3s ease; */
     }
     main .recent_order table {
         width: 100%;
         border-collapse: collapse;
-        transition: 0.3s ease;
+        /* transition: 0.3s ease; */
     }
     aside  {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        color: var(--clr-info-dark);
+        background-color: var(--clr-white);
+        
     }
-}
+   
+
 
 /* ........Media Query ....... */
 @media (max-width:477px){
