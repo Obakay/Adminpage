@@ -63,7 +63,7 @@
     </a>
     <a href="#">
         <span class="material-symbols-sharp">logout</span>
-        <h3>Loout</h3>
+        <h3>Logout</h3>
     </a> 
 </div>
 
@@ -73,13 +73,9 @@
 
         <!-- main section start --> 
         <main>
-           <div class="menu" id="menu">
-            <button id="menu_bar">
-                <span class="material-symbols-sharp" >menu</span>
-
-            </button>
-            <h2> Dashboard </h2>
-           </div>
+            <div class="main-content"> 
+          
+           <h2> Dashboard </h2>
             <div class="date">
                 <input type="date" >
             </div>
@@ -158,10 +154,11 @@
                             <th> Product Number</th>
                             <th> Payment </th>
                             <th> Status </th>
+                            <th></th>
                         </tr> 
                     </thead>
                     <tbody>
-
+ 
                         <tr>
                             <td>Mini Usb</td>
                             <td>450</td>
@@ -189,7 +186,7 @@
                             <td>Due</td>
                             <td class="warning">Pending</td>
                             <td class="primary">Details</td>
-                        </tr>
+                        </tr>  
 
                     </tbody> 
                 </table>
@@ -211,10 +208,18 @@
         <!-- right section start -->
         <div class="right">
             <div class="top">
-                
-                <div class="theme-toggler">
-                    <span class="material-symbols-sharp active">light_mode</span>
-                    <span class="material-symbols-sharp">dark_mode</span> 
+                <div class="menu" id="menu">
+                    <button id="menu_bar">
+                        <span class="material-symbols-sharp" >menu</span>
+        
+                    </button>
+                   
+                   </div>
+                <div class="theme-toggler  ">
+                    <button class="theme_toggler" aria-label="Toggle dark mode">
+                        <span class="material-symbols-sharp light-icon active">light_mode</span>
+                    <span class="material-symbols-sharp dark-icon ">dark_mode</span> 
+                    </button>
                 </div>
                 <div class="profile">
                     <div class="info">
@@ -325,6 +330,7 @@
         <!-- right section end -->
         
     </div> 
+    <script scr="Orders.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
