@@ -842,7 +842,7 @@ main .recent_order {
 @media screen and (max-width:768px ) {
     .container{
         width: 100%;
-        display: block
+        display: inline-block
         grid-template-columns: 1fr ;
         grid-template-areas: " sidebar main-content" " sidebar  right" ;
         padding: 0 var(--padding-1);
