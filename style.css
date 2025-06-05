@@ -867,8 +867,8 @@ main .recent_order {
  
 @media screen and (max-width:768px ) {
     .container{
-        width: 100%; 
-        display: inline-block;
+        width: 100%;
+        display: inline-block
         grid-template-columns: 1fr ;
         grid-template-areas: " sidebar main-content" " sidebar  right" ;
         padding: 0 var(--padding-1);
@@ -1061,25 +1061,6 @@ main .Insights>div {
 }
 main .recent_order {
     margin: 30px 15px 30px 15px;
-}
-#menu{
-    display: initial;
-  }
-aside {
-    position: fixed;
-    left: -100%;
-    width: 200px;;
-    z-index: 3;
-    background: var(--clr-white);
-    height: 100vh;
-    padding-right: var(--card-padding);
-    box-shadow: 1rem 3rem 4rem var(--clr--light);
-    display: none;
-    animation: showMenu 1s ease forwards;
-}
-
-@keyframes showMenu{
-    to(
-        left: 0;
-    );
-}
+} */
+ 
+ 
